@@ -1,0 +1,34 @@
+.header{
+    background-color: var(--White);
+    width: 100%;
+    padding: 2.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-desktop-container{
+    width:60%;
+    height: 100%;
+    display: none;
+}
+
+.logo{
+    width: 16rem;
+}
+
+@media (min-width:900px){
+    .header{
+        padding: 0 10rem;
+    }
+
+    .menu-close,
+    .menu-open{
+        display: none;
+    }
+
+    .header-desktop-container{
+        display: flex;
+       
+        justify-content: space-between;
+    }
+}
