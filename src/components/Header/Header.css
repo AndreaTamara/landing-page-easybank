@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 400;
+    position: relative;
 }
 .header-desktop-container{
     width:60%;
@@ -16,13 +18,17 @@
     width: 16rem;
 }
 
+.menu-icon:hover{
+    cursor: pointer;
+}
+
 @media (min-width:900px){
     .header{
         padding: 0 10rem;
     }
 
-    .menu-close,
-    .menu-open{
+    
+    .menu-icon{
         display: none;
     }
 

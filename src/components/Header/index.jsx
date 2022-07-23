@@ -1,32 +1,40 @@
 import './Header.css';
-import logo from '../../assets/images/logo.svg'
-import { NavBAr } from '../NavBar';
+import { NavBar } from '../NavBar';
 import { RequestButton } from '../RequestButton';
 import iconHamburger from '../../assets/icons/icon-hamburger.svg';
 import iconClose from '../../assets/icons/icon-close.svg';
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
+import { Modal } from '../Modal';
+import { Logotype } from '../Logotype';
 
 export const Header = () => {
-
+ 
   const [openModal, setOpenModal] = useState(false)
 
   return (
     <header className="header">
-      <img className='logo' src={logo} alt='easybank logo' onClick={useNavigate('/')}/>
+      <Logotype color="#2D314D"/>
       <div className='header-desktop-container'>
-        <NavBAr />
+        <NavBar />
         <RequestButton />
       </div>
       {openModal ?
-        <button className='menu-close' onClick={()=>setOpenModal(false)}>
+        <button className='menu-icon' onClick={() => setOpenModal(false)}>
           <img src={iconClose} alt='menu icon' />
         </button>
         :
-        <button className='menu-open' onClick={()=>setOpenModal(true)}>
+        <button className='menu-icon' onClick={() => setOpenModal(true)}>
           <img src={iconHamburger} alt='menu icon' />
         </button>
       }
+      {openModal &&
+        <Modal>
+          <NavBar column={true} />
+        </Modal>
+      }
     </header>
+
+
   )
 }

@@ -1,0 +1,30 @@
+.modal-background{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--Grayish-Blue-transparent);
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    padding: 8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.modal-element{
+    width: 95%;
+    max-width: 50rem;
+    background-color: var(--White);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-element .nav-bar-option{
+    color: var(--Dark-Blue);
+}
+.modal-element .nav-bar-option:hover{
+    color: var(--Dark-Blue);
+}

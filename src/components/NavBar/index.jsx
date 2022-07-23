@@ -1,10 +1,10 @@
 import './NavBar.css';
 import { Link } from 'react-router-dom'
 
-export const NavBAr = () => {
+export const NavBar = ({column}) => {
   return (
     <nav className='nav-bar-container'>
-      <ul className='nav-bar'>
+      <ul className={`nav-bar ${column? 'nav-bar-column-list':''}`}>
         <Link to='/'>
           <li className='nav-bar-option'>
             Home
