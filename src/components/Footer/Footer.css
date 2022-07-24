@@ -1,3 +1,45 @@
 .footer{
 background-color: var(--Dark-Blue);
+display: flex;
+flex-direction: column;
+padding: 2.5rem;
+align-items: center;
+gap:2.5rem;
+}
+.copyrigth{
+    color: var(--Grayish-Blue);
+    font-size: 1.4rem;
+}
+.footer-logo-networks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5rem;
+}
+
+.footer .nav-bar{
+    align-items: center;
+}
+
+.footer .nav-bar-option:hover{
+    border-image-source: none;
+}
+
+.footer-btn-copy{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:900px){
+    .footer{
+        flex-direction: row;
+        padding: 2.5rem 10rem;
+        justify-content: space-between;
+    }
+    .footer-btn-copy{
+        align-items: flex-end;
+    }
+    .footer .nav-bar{
+        align-items: flex-start;
+    }
 }
