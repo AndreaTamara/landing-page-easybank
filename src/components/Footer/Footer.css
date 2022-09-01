@@ -23,6 +23,7 @@ gap:2.5rem;
 
 .footer .nav-bar-option:hover{
     border-image-source: none;
+    color:var(--Lime-Green)
 }
 
 .footer-btn-copy{

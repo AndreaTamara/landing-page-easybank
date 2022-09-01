@@ -1,7 +1,11 @@
+import online from './icons/icon-online.svg';
+import budgeting from './icons/icon-budgeting.svg';
+import onboarding from './icons/icon-onboarding.svg';
+import api from './icons/icon-api.svg';
 
 export const easyBankTexts = {
     navBar: [
-        Home, About, contact
+        'Home', 'About', 'contact'
     ],
     hero: {
         title: 'Next generation digital banking',
@@ -13,19 +17,23 @@ export const easyBankTexts = {
     },
 
     benefits: [
-        {
+        {   
+            url:online,
             title: 'Online Banking',
             body: 'Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.'
         },
         {
+            url:budgeting,
             title: 'Simple Budgeting',
             body: 'See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.'
         },
         {
+            url:onboarding,
             title: 'Fast Onboarding',
             body: 'We don’t do branches. Open your account in minutes online and start taking control of your finances right away.'
         },
         {
+            url:api,
             title: 'Open API',
             body: 'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.'
         }

@@ -1,0 +1,11 @@
+.benefits-container{
+    display: flex;
+    flex-direction: column;
+    gap:2.3rem;
+}
+@media (min-width:900px){
+    .benefits-container{
+        flex-direction: row;
+       
+    }
+}
